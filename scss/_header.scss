@@ -1,0 +1,40 @@
+/* Header */
+header nav ul li {
+    padding: 8px 12px;
+}
+.container-logo {
+    display: flex;
+}
+.image {
+    width: 10%;
+    padding: auto;
+}
+.container-encabezado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    padding: 3%;
+    flex-flow: row wrap;
+}
+@media screen and (max-width: 1024px) {
+    .encabezado .encabezado {
+        justify-content: start;
+    }
+}
+.encabezado li {
+    margin: 10px;
+}
+.inicio {
+    text-decoration: none;
+    color: black;
+}
+/* Fin header */

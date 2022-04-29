@@ -1,0 +1,22 @@
+/* Section-extends */
+%flex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+%flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+%mensaje {
+    background-color: rgba(46, 204, 113, 0.33);
+    width: 60%;
+}
+.detalle {
+    @extend %flex;
+}
+.padre {
+    @extend %flexbox;
+    @extend %mensaje;
+}
+/* Fin section-extends */

@@ -1,0 +1,20 @@
+/* Section-mixins */
+@mixin flexbox ($flex) {
+    display: $flex;
+}
+.beneficios {
+    @include flexbox(flex)
+}
+@mixin justify($center) {
+    justify-content: $center;
+}
+.beneficios {
+    @include justify(center)
+}
+@mixin aling($align) {
+    align-content: $align;
+}
+.beneficios {
+    @include aling(flex-start)
+}
+/* Fin section-mixins */

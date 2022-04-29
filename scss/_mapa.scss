@@ -1,0 +1,23 @@
+$perfil-standard: (
+    bg-color-standard: #2ECC71,
+    font-standard: 2rem
+);
+
+$perfil-premium: (
+    bg-color-premium: #00f365,
+    border-premium: 5px,
+    font-premium: 1.5rem
+);
+
+/* Header-mapa */
+header {
+    background-color: map-get($perfil-standard,bg-color-standard);
+}
+
+header nav ul li:hover {
+    background-color: map-get($perfil-premium, bg-color-premium);
+    transition: 1s;
+    font-size: map-get($perfil-premium, font-premium);
+    border-radius: map-get($perfil-premium, border-premium);
+}
+/* Fin heaer-mapa */
